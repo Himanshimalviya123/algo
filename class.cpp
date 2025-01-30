@@ -326,7 +326,43 @@ int main(){
         }
     }
         }
-    
+    // missing multiple no.=========================
+# include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={2,8,5,9,14};
+    int j=0;
+    for(int i=0;i<4;i++)
+    {
+    if(arr[i+1]-arr[i]>1)
+    {
+        for(int j=arr[i]+1;j<arr[i+1];++j)
+        {
+            cout<<j<<endl;
+        }
+    }
+    }
+}
+ // missing multiple no.=========================
+# include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={2,8,5,9,14};
+    int j=0;
+    for(int i=0;i<4;i++)
+    {
+    if(arr[i+1]-arr[i]>1)
+    {
+        for(int j=arr[i]+1;j<arr[i+1];++j)
+        {
+            cout<<j<<endl;
+        }
+    }
+    }
+}
+       
 
 
 
