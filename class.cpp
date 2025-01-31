@@ -389,6 +389,154 @@ int main()
 }
 }
 
+// =========================(or another way)================
+#include<iostream>
+using namespace std;
+// class top
+// {
+//     int c=0;
+//     bool f=true;
+//     public:void bubble(int arr[],int s)
+//     {
+//     for(int i=0;i<s;i++)
+//     {
+//       for(int j=0;j<s-i-1;j++)
+//       {
+//           c++;
+//           if(arr[j]>arr[j+1])
+//           {
+//               int tmp;
+//               tmp=arr[j+1];
+//               arr[j+1]==arr[j];
+//               arr[j]=tmp;
+//               f=false;
+//           }
+//       }
+//       cout<<"count"<<c;
+//       if(f==true){
+//           break;
+//       }
+//     }
+//     cout<<"counter"<<c;
+//     }
+// };
+
+// int main()
+// {
+//     top p;
+//   int arr[]={2,4,5,6,8,5,8,7,0};
+//   int s=sizeof(arr)/sizeof(arr[0]);
+//   for(int i=0;i<s;i++)
+//   {
+//       cout<<arr[i]<<"\t";
+//   }
+//     p.bubble(arr,s);
+//   for(int i=0;i<s;i++)
+//   {
+//       cout<<arr[i]<<"\t";
+//   }
+
+// }
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[]={3,6,9,9,7,7,3,7,7,4,9,9,4};
+    for( int i=0;i<13;i++)
+    {
+        bool f=false;
+        if(arr[i]!=-1){
+            
+        for( int j=i+1;j<13;j++)
+        {
+            if(arr[i]==arr[j])
+            {
+               
+            arr[j]=-1;
+            f=true;
+            }
+        }
+        
+    }
+    if(f==true)
+    {
+    cout<<arr[i]<<endl;
+    }
+    
+    }
+    }
+    // ============================palindrown========================
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={1,1,2,1};
+    int i=0;
+    int j=3;
+   while(i<j)
+   {
+      if(arr[i]!=arr[j])
+      {
+          cout<<"not a pallindrown";
+          return 0;
+      }
+      i++;
+      j--;
+      
+   }
+    cout<<"pallindrown";
+       
+}
+// question:1  move zero's in the end of the array? ======================
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={1,2,0,3,0,4,0,9,0,8};
+    int j=0;
+    for(int i=0;i<10;i++)
+    {
+    
+    
+        if(arr[i]!=0)
+        {
+            int tmp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=tmp;
+            j++;
+        }
+    }
+    for(int i=0;i<10;i++)
+    {
+        cout<<arr[i]<<"\t";
+    }
+    }
+       
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
    
