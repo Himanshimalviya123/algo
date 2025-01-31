@@ -362,7 +362,36 @@ int main()
     }
     }
 }
-       
+// find the duplicate  element  in an array?
+// int arr[]={1,2,3,4,1,2};
+// output:-1 duplicate
+//         2 duplicate
+# include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={1,6,4,1,6,6,8};
+    for(int i=0;i<7;i++)
+   {
+       bool dup=false;
+       for(int j=i+1;j<7;j++)
+       {
+           if(arr[i]==arr[j] && arr[i]!=-1)
+           {
+               arr[j]=-1;
+               dup=true;
+           }
+       }
+       if(dup){
+           cout<<"duplicate "<<arr[i]<<endl;
+       }
+    //   cout<<"duplicate "<<arr[i]<<endl;
+}
+}
+
+
+
+   
 
 
 
