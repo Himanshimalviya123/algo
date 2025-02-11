@@ -510,7 +510,78 @@ int main()
         cout<<arr[i]<<"\t";
     }
     }
-       
+
+// Online C++ compiler to run C++ program online
+//=============================majority===================
+#include <iostream>
+using namespace std;
+int main() {
+   int arr[]={1,2,2,5,5,5,5,4,4,4};
+   int size=sizeof(arr)/sizeof(arr[0]);
+   int majority=0;
+   int maxcount=0;
+   for(int i=0; i<size; i++){
+       int count=0;
+       for(int j=0; j<size; j++){
+           if(arr[i]==arr[j]){
+               count++;
+           }
+           
+       }
+       if(count>maxcount){
+           maxcount=count;
+           majority=arr[i];
+       }
+   }
+   cout<<"majority:"<<majority;
+}
+// ========================================string==================
+// reverse
+#include <iostream>
+using namespace std;
+int main()
+{
+    string str="himanshi";
+    int i=0;
+     int j=str.length()-1;
+    while(i<=j)
+    {
+        char temp=str[i];
+        str[i]=str[j];
+        str[j]=temp;
+        i++;
+        j--;
+    }
+    cout<<str;
+    return 0;
+}
+    //   ======================pallindrown========
+    #include <iostream>
+using namespace std;
+int main()
+{
+    string str="himanshi";
+    string ans=str;
+
+     int j=str.length()-1;
+     int i=0;
+    while(i<=j)
+    {
+        char temp=str[i];
+        str[i]=str[j];
+        str[j]=temp;
+        i++;
+        j--;
+    }
+   if(str==ans)
+   {
+       cout<<"pallindrown";
+   }
+   else
+   {
+       cout<<"not pallindrown";
+   }
+} 
 
     
     
